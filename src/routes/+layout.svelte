@@ -3,7 +3,7 @@
 	import '../app.css';
 	let { children } = $props();
 	// import resume from '$lib/Assets/Resume_Dana St. Hill Art.pdf'
-	import resume from '$lib/Assets/resume.pdf';
+	// import resume from '$lib/Assets/resume.pdf';
 	import Icon from '@iconify/svelte';
 	var showMenu = $state(false);
 	import bgTexture from '$lib/imgs/bg-texture.jpg';
@@ -49,7 +49,13 @@
 		</button>
 
 		<nav class="nav-links desktop-only" aria-label="Main navigation">
-			<a class="nav-pill" href={resume} download="Dana_St_Hill_Resume.pdf"> Resume </a>
+			<a
+    class="nav-pill"
+    href="/resume.pdf"
+    download="Dana_St_Hill_Resume.pdf"
+>
+    Resume
+</a>
 
 			<button class="nav-pill" onclick={() => goto('/portfolio')}> Gallery </button>
 
