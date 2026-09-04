@@ -49,28 +49,14 @@
 		</button>
 
 		<nav class="nav-links desktop-only" aria-label="Main navigation">
+			<a class="nav-pill" href={resume} download="Dana_St_Hill_Resume.pdf"> Resume </a>
 
-    <a
-        class="nav-pill"
-        href={resume}
-        download
-    >
-        Resume
-    </a>
+			<button class="nav-pill" onclick={() => goto('/portfolio')}> Gallery </button>
 
-    <button class="nav-pill" onclick={() => goto("/portfolio")}>
-        Gallery
-    </button>
+			<button class="nav-pill" onclick={() => goto('/about')}> About Me </button>
 
-    <button class="nav-pill" onclick={() => goto("/about")}>
-        About Me
-    </button>
-
-    <button class="nav-pill" onclick={() => goto("/contact")}>
-        Contact
-    </button>
-
-</nav>
+			<button class="nav-pill" onclick={() => goto('/contact')}> Contact </button>
+		</nav>
 
 		<button
 			class="hamburger mobile-only"
