@@ -2,7 +2,8 @@
         import headshot from '$lib/imgs/headshot.jpg'
           import Links from '$lib/data/Links.svelte'
 </script>
-    <div class="hero">
+<div class="hero-wrapper">
+<div class="hero">
         <div class="about-me">
             <h1 class="about-h1 title-font">About Me</h1>
             <img src={headshot} class="about-img"/>
@@ -19,6 +20,8 @@
         </div>
    
     </div>
+</div>
+    
 
       <div>
         <Links />
@@ -39,7 +42,11 @@
         column-gap: 40px;
         
     }
-
+    .hero-wrapper {
+        width: 100%;
+        height: fit-content;
+        padding-top: 20px;
+    }
             .hero {
         z-index: 1;
         display: grid;
