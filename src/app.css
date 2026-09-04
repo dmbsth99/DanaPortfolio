@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+
+.title-font {
+    font-family: "Gaegu", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+}
+
+.text-font {
+    font-family: "Patrick Hand SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.logo-font {
+    font-family: "Grandstander", cursive;
+    
+    /* font-optical-sizing: auto; */
+    /* font-weight: <weight>; */
+    /* font-style: normal; */
+}
+  
